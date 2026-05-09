@@ -1,0 +1,38 @@
+.button-v2 {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  color: var(--gray-700);
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms
+    ease;
+}
+
+.button-v2:hover,
+.button-v2--preview-hover {
+  background: var(--gray-200);
+}
+
+.button-v2--active {
+  background: var(--brand-base);
+  border-color: var(--brand-base);
+  color: var(--white);
+}
+
+.button-v2:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: var(--white);
+  color: var(--gray-300);
+}

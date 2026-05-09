@@ -1,0 +1,35 @@
+.section-stack--categories {
+  display: grid;
+  gap: 32px;
+}
+
+.stats-grid--categories .stat-card__value {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.stats-grid--categories .stat-card__value--with-icon {
+  gap: 12px;
+}
+
+.stats-grid--categories .stat-card {
+  padding: 24px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 1320px) {
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1120px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}

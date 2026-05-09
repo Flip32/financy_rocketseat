@@ -1,0 +1,29 @@
+.tx-type {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.tx-type {
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.tx-type--income .tx-type__label {
+  color: var(--green-dark);
+}
+
+.tx-type--income .tx-type__icon {
+  color: var(--green-base);
+}
+
+.tx-type--expense .tx-type__label {
+  color: var(--red-dark);
+}
+
+.tx-type--expense .tx-type__icon {
+  color: var(--red-base);
+}

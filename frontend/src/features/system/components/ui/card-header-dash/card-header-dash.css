@@ -1,0 +1,31 @@
+.card-header-dash {
+  min-height: 118px;
+  border-radius: 12px;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.card-header-dash__head {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-header-dash__title {
+  margin: 0;
+  color: var(--gray-500);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.card-header-dash__value {
+  margin: 0;
+  color: var(--gray-800);
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+}

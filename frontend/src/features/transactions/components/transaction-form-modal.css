@@ -1,0 +1,147 @@
+.modal--transaction-form {
+  width: min(540px, calc(100vw - 48px));
+}
+
+.modal--transaction-form .modal__header {
+  align-items: flex-start;
+  padding: 24px;
+  border-bottom: 0;
+}
+
+.modal--transaction-form .modal__title {
+  font-size: 16px;
+  line-height: 1.08;
+}
+
+.modal--transaction-form .modal__subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.modal--transaction-form .modal__body {
+  padding: 0px 24px 24px;
+}
+
+.transaction-form-modal__content {
+  display: grid;
+  gap: 24px;
+}
+
+.transaction-form-modal__type-switch {
+  margin: 0;
+  padding: 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.transaction-form-modal__type-button {
+  width: 100%;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border-color: transparent;
+  background: transparent;
+  color: var(--gray-600);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.transaction-form-modal__type-button.button-v2:hover,
+.transaction-form-modal__type-button.button-v2--preview-hover {
+  background: transparent;
+}
+
+.transaction-form-modal__type-button--expense.button-v2--active {
+  color: var(--gray-800);
+  background: var(--gray-100);
+  border-color: var(--red-base);
+}
+
+.transaction-form-modal__type-button--income.button-v2--active {
+  color: var(--gray-800);
+  background: var(--gray-100);
+  border-color: var(--green-base);
+}
+
+.transaction-form-modal__fields {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.transaction-form-modal__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.transaction-form-modal__row > .field-wrap {
+  min-width: 0;
+}
+
+.transaction-form-modal__currency-prefix {
+  color: var(--gray-800);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.modal--transaction-form .field-wrap {
+  gap: 8px;
+}
+
+.modal--transaction-form .field-label {
+  color: var(--gray-700);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.modal--transaction-form .field {
+  min-height: 62px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 16px;
+}
+
+.modal--transaction-form .field::placeholder {
+  font-size: 16px;
+}
+
+.modal--transaction-form .field-left-icon {
+  left: 16px;
+}
+
+.modal--transaction-form .field--with-icon {
+  padding-left: 48px;
+}
+
+.modal--transaction-form .field-with-right-icon .field {
+  padding-right: 44px;
+}
+
+.modal--transaction-form .label-button--md {
+  min-height: 62px;
+  font-size: 16px;
+}
+
+@media (max-width: 720px) {
+  .modal--transaction-form {
+    width: min(448px, calc(100vw - 32px));
+  }
+
+  .transaction-form-modal__type-switch,
+  .transaction-form-modal__row {
+    grid-template-columns: 1fr;
+  }
+}

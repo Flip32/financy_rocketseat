@@ -1,0 +1,48 @@
+.category-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-icon--gray {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.category-icon--blue {
+  background: var(--blue-light);
+  color: var(--blue-base);
+}
+
+.category-icon--purple {
+  background: var(--purple-light);
+  color: var(--purple-base);
+}
+
+.category-icon--pink {
+  background: var(--pink-light);
+  color: var(--pink-base);
+}
+
+.category-icon--red {
+  background: var(--red-light);
+  color: var(--red-base);
+}
+
+.category-icon--orange {
+  background: var(--orange-light);
+  color: var(--orange-base);
+}
+
+.category-icon--yellow {
+  background: var(--yellow-light);
+  color: var(--yellow-base);
+}
+
+.category-icon--green {
+  background: var(--green-light);
+  color: var(--green-base);
+}

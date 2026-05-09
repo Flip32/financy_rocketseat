@@ -1,0 +1,36 @@
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.dashboard-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.dashboard-section--recent {
+  grid-column: span 2;
+}
+
+.dashboard-recent-state .loading,
+.dashboard-recent-state .empty {
+  margin: 0;
+  padding: 24px;
+}
+
+@media (max-width: 1120px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-section--recent {
+    grid-column: auto;
+  }
+}

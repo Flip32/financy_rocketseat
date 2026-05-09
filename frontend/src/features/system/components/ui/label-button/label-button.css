@@ -1,0 +1,54 @@
+.label-button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 140ms ease, border-color 140ms ease, color 140ms
+    ease;
+}
+
+.label-button--md {
+  min-height: 48px;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.label-button--sm {
+  min-height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.label-button--solid {
+  background: var(--brand-base);
+  border-color: transparent;
+  color: var(--white);
+}
+
+.label-button--outline {
+  background: var(--white);
+  border-color: var(--gray-300);
+  color: var(--gray-700);
+}
+
+.label-button--solid:hover:not(:disabled),
+.label-button--solid.label-button--preview-hover {
+  background: var(--brand-dark);
+}
+
+.label-button--outline:hover:not(:disabled),
+.label-button--outline.label-button--preview-hover {
+  background: var(--gray-200);
+}
+
+.label-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

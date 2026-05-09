@@ -1,0 +1,44 @@
+.inline-link {
+  font-size: 14px;
+  color: var(--brand-base);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 140ms ease, filter 140ms ease, text-decoration-color 140ms
+    ease;
+}
+
+.inline-link > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.inline-link:hover,
+.inline-link--preview-hover {
+  color: var(--brand-base);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  filter: brightness(0.86);
+}
+
+.inline-link:focus-visible {
+  outline: 2px solid rgb(31 111 67 / 36%);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.inline-link:disabled,
+.inline-link[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  text-decoration: none;
+  filter: none;
+}

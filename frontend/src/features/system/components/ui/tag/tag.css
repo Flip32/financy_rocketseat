@@ -1,0 +1,55 @@
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 4px 12px;
+  width: fit-content;
+  max-width: max-content;
+  justify-self: start;
+  align-self: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.category-badge--gray {
+  background: var(--gray-200);
+  color: var(--gray-700);
+}
+
+.category-badge--blue {
+  background: var(--blue-light);
+  color: var(--blue-base);
+}
+
+.category-badge--purple {
+  background: var(--purple-light);
+  color: var(--purple-base);
+}
+
+.category-badge--pink {
+  background: var(--pink-light);
+  color: var(--pink-base);
+}
+
+.category-badge--red {
+  background: var(--red-light);
+  color: var(--red-base);
+}
+
+.category-badge--orange {
+  background: var(--orange-light);
+  color: var(--orange-base);
+}
+
+.category-badge--yellow {
+  background: var(--yellow-light);
+  color: var(--yellow-base);
+}
+
+.category-badge--green {
+  background: var(--green-light);
+  color: var(--green-base);
+}

@@ -1,0 +1,150 @@
+.modal--category {
+  width: min(424px, calc(100vw - 48px));
+}
+
+.modal--category .modal__header {
+  align-items: flex-start;
+  padding: 20px 24px 0;
+  border-bottom: 0;
+}
+
+.modal--category .modal__title {
+  font-size: 16px;
+  line-height: 1.08;
+}
+
+.modal--category .modal__subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.modal--category .modal__body {
+  padding: 24px;
+}
+
+.category-form-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.category-form-grid .field {
+  min-height: 46px;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 0 14px;
+}
+
+.category-form-grid .field::placeholder {
+  font-size: 14px;
+}
+
+.category-form-grid .field-wrap {
+  gap: 8px;
+}
+
+.category-form-grid .field-label {
+  color: var(--gray-700);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.category-form-grid legend.field-label {
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.category-form-grid .helper-text {
+  color: var(--gray-500);
+  font-size: 12px;
+}
+
+.category-form-grid .helper-text--error {
+  color: var(--danger);
+}
+
+.category-form-grid .label-button--md {
+  min-height: 44px;
+  font-size: 14px;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.color-chip {
+  --chip-color: var(--gray-500);
+  --chip-border-color: var(--chip-color);
+
+  width: 100%;
+  min-height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.color-chip__swatch {
+  width: 100%;
+  min-height: 20px;
+  border-radius: 8px;
+  display: block;
+  background: var(--chip-color);
+}
+
+.color-chip:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(31 111 67 / 18%);
+}
+
+.color-chip--active {
+  border-color: var(--chip-border-color);
+}
+
+.color-chip--blue {
+  --chip-color: var(--blue-base);
+}
+
+.color-chip--purple {
+  --chip-color: var(--purple-base);
+}
+
+.color-chip--pink {
+  --chip-color: var(--pink-base);
+}
+
+.color-chip--red {
+  --chip-color: var(--red-base);
+}
+
+.color-chip--orange {
+  --chip-color: var(--orange-base);
+}
+
+.color-chip--yellow {
+  --chip-color: var(--yellow-base);
+  --chip-border-color: var(--yellow-dark);
+}
+
+.color-chip--green {
+  --chip-color: var(--green-base);
+  --chip-border-color: var(--brand-base);
+}
+
+@media (max-width: 1120px) {
+  .modal--category {
+    width: min(424px, calc(100vw - 32px));
+  }
+}
