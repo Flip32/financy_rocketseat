@@ -100,3 +100,12 @@ A aplicacao estara disponivel no endereco informado pelo Vite (geralmente `http:
 - Se mudar a URL do backend, atualize `VITE_BACKEND_URL`.
 - Em caso de erro de banco, rode novamente `npm run prisma:migrate`.
 
+## Testes de integracao
+
+O comando abaixo cria um banco SQLite separado para testes e valida o isolamento de dados entre usuarios.
+
+```bash
+cd /backend
+npm run test
+```
+
