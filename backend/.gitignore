@@ -10,3 +10,4 @@ pnpm-debug.log*
 !.env.example
 prisma/dev.db
 prisma/dev.db-journal
+prisma/test.db

@@ -19,7 +19,7 @@ Aplicacao FullStack para gerenciamento de financas com backend GraphQL e fronten
 1. Entre na pasta do backend:
 
 ```bash
-cd /Users/flipmac/Projetos/financy_rocketseat/backend
+cd backend
 ```
 
 2. Instale as dependencias:
@@ -59,7 +59,7 @@ A API ficara disponivel em `http://localhost:3333/graphql` (ou a porta definida 
 1. Em outro terminal, entre na pasta do frontend:
 
 ```bash
-cd /Users/flipmac/Projetos/financy_rocketseat/frontend
+cd frontend
 ```
 
 2. Instale as dependencias:
@@ -105,7 +105,6 @@ A aplicacao estara disponivel no endereco informado pelo Vite (geralmente `http:
 O comando abaixo cria um banco SQLite separado para testes e valida o isolamento de dados entre usuarios.
 
 ```bash
-cd /backend
+cd backend
 npm run test
 ```
-
